@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Management System</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #0d0d0d; /* Darker black background */
+            color: #e0e0e0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 50px 60px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+            border: 1px solid #2a2a2a;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #00bcd4; /* Professional teal accent */
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #b0b0b0;
+        }
+
+        .btn-admin {
+            background: linear-gradient(45deg, #2196f3, #00bcd4); /* Blue → Teal gradient */
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-admin:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.85em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Welcome to Quiz Management System</h1>
+        <p>Access your administrative dashboard below:</p>
+        <a href="/admin/" class="btn-admin">Admin Login</a>
+    </div>
+    <footer>© 2026 Quiz Portal | Designed by Sneha</footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}Quiz Management System{% endblock %}
+
+{% block branding %}
+<div class="navbar">
+    <h1>Quiz Admin Dashboard</h1>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/admin/auth/user/">Manage Users</a> |
+        <a href="/admin/quiz/question/">Manage Quizzes</a> |
+        <a href="/admin/logout/">Logout</a>
+    </nav>
+</div>
+
+<!-- Dashboard Cards -->
+<div class="dashboard">
+    <div class="module">
+        <h3>Users</h3>
+        <p>Manage registered users</p>
+        <a href="/admin/auth/user/">View</a>
+    </div>
+    <div class="module">
+        <h3>Questions</h3>
+        <p>Add or edit quiz questions</p>
+        <a href="/admin/quiz/question/">View</a>
+    </div>
+    <div class="module">
+        <h3>Scores</h3>
+        <p>View quiz scores</p>
+        <a href="/admin/quiz/score/">View</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block extrastyle %}
+<link rel="stylesheet" type="text/css" href="{% static 'admin.css' %}">
+{% endblock %}
